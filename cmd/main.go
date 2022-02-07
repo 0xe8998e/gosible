@@ -1,9 +1,9 @@
 /*
  * @Author: 0xe8998e@gmail.com
  * @Date: 2021-09-15 14:52:26
- * @LastEditTime: 2022-02-07 20:16:58
+ * @LastEditTime: 2022-02-07 22:03:18
  * @LastEditors: 0xe8998e@gmail.com
- * @FilePath: /gosible/main.go
+ * @FilePath: /gosible/cmd/main.go
  * @Description: gosible Contol Servers of  DevOps's  Tool
  */
 
@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/0xe8998e/gosible/pkg/gosible"
+	"github.com/0xe8998e/gosible/gosible"
 	"github.com/urfave/cli/v2"
 )
 
@@ -23,14 +23,14 @@ func main() {
 			&cli.StringFlag{
 				Name:     "playbooks",
 				Aliases:  []string{"p"},
-				Value:    "./examples/playbooks/test.yml",
+				Value:    "./examples/playbook/test.yaml",
 				Usage:    "Enter the characters",
 				Required: true,
 			},
 			&cli.StringFlag{
 				Name:     "inventory",
 				Aliases:  []string{"i"},
-				Value:    "./examples/playbooks/hosts.yml",
+				Value:    "./examples/playbook/hosts.yaml",
 				Usage:    "language for the greeting",
 				Required: true,
 			},
