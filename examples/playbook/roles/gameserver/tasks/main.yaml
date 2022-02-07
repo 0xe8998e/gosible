@@ -1,0 +1,76 @@
+tasks:
+- name: test shell 2 {{ project }} {{ cluster }}
+  cmd: shell
+  param: 
+    data: "ls ~"
+  tag: "test3"
+
+# tasks:
+# - name: create repo for elastic packages
+#   cmd: yum_repository
+#   param:
+#     name: elk
+#     description: Elastic 7.x Repo
+#     baseurl:  "https://mirrors.bfsu.edu.cn/elasticstack/yum/elastic-7.x/"
+#     gpgcheck: 0
+
+# - name:  mkdir {{groupId}}  
+#   cmd: mkdir
+#   param:
+#     data: "/tmp/{{groupId}}"
+  
+
+# - name: Creating {{userId}} user
+#   cmd: user
+#   param:
+#     name: "{{userId}}"
+#     group: "{{groupId}}"
+#     system: yes
+#     shell: "/sbin/nologin"
+#     comment: "{{userId}} nologin User"
+#     createhome: "no"
+#     state: present
+
+# - name: install filebeat
+#   cmd: yum
+#   param:
+#     name: filebeat
+#     state: present
+
+# - name: Creates {{rootDir}}/logs/{{ serviceName }}  directory
+#   cmd: file
+#   param:
+#     path: "{{rootDir}}/logs/{{ serviceName }}/"
+#     state: directory
+#     owner: "{{userId}}"
+#     group: "{{groupId}}"
+#     mode: 0755
+
+# - name: Creates {{rootDir}}/{{ serviceName }} directory
+#   cmd: file
+#   param:
+#     path: "{{rootDir}}/{{ serviceName }}/"
+#     state: directory
+#     owner: "{{userId}}"
+#     group: "{{groupId}}"
+#     mode: 0755
+
+# - name: create filebeat config
+#   cmd: template
+#   param:
+#     src: templates/filebeat.yml
+#     dest: "{{rootDir}}/{{ serviceName }}/filebeat.yml"
+
+# - name:  cp {{ serviceName }}  service 
+#   cmd: template
+#   param:
+#     src: "{{ serviceName }}.service"
+#     dest: "/usr/lib/systemd/system/{{ serviceName }}.service"
+
+
+# - name: start filebeat service
+#   cmd: service
+#   param:
+#     name: filebeat
+#     state: started
+#     enabled: yes

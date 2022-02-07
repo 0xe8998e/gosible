@@ -1,0 +1,4 @@
+vars:
+  project: plog
+  cluster: sandbox
+  version: 1001

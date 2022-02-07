@@ -1,0 +1,106 @@
+playbooks:
+- playbook:
+  name: playbook1
+  priority: 3
+  groupName: xxxx2
+  vars:
+    groupId: "tmptest"
+    project: plog
+    cluster: sandbox
+    version: 1001
+  roles:
+  - role: 
+    name: battelserver
+    tags: [ 'test1']
+    vars:
+      groupId: "tmptest"
+      project: plog
+      cluster: sandbox
+      version: 1001
+    
+  # - role: 
+  #   name: gameserver 
+  #   tags: [ 'test3']
+  #   vars:
+  #     groupId: "tmptest"
+  #     project: plog
+  #     cluster: sandbox
+  #     version: 1001
+      
+
+# - playbook:
+#   name: playbook2
+#   priority: 2
+#   groupName: xxxx1
+#   vars:
+#     project: plog
+#     cluster: sandbox
+#     version: 1001
+#   roles:
+#   - role: 
+#     name: battelserver
+#     tags: [ 'web_v','web_v2']
+#     vars:
+#       project: plog
+#       cluster: sandbox 
+#       version: 1001
+  
+#   - role: 
+#     name: gameserver 
+#     tags: [ 'web_v','web_v2']
+#     vars:
+#       project: plog
+#       cluster: sandbox
+#       version: 1001
+
+
+
+# - playbook:
+#   name: playbook3
+#   priority: 4
+#   groupName: xxxx1
+#   vars:
+#     project: plog
+#     cluster: sandbox
+#     version: 1001
+#   roles:
+#   - role: 
+#     name: battelserver
+#     tags: [ 'web_v','web_v2']
+#     vars:
+#       project: plog
+#       cluster: sandbox 
+#       version: 1001
+  
+#   - role: 
+#     name: gameserver 
+#     tags: [ 'web_v','web_v2']
+#     vars:
+#       project: plog
+#       cluster: sandbox
+#       version: 1001
+
+# - playbook:
+#   name: playbook4
+#   priority: 1
+#   groupName: xxxx1
+#   vars:
+#     project: plog
+#     cluster: sandbox
+#     version: 1001
+#   roles:
+#   - role: 
+#     name: battelserver
+#     tags: [ 'web_v','web_v2']
+#     vars:
+#       project: plog
+#       cluster: sandbox 
+#       version: 1001
+  
+#   - role: 
+#     name: gameserver 
+#     tags: [ 'web_v','web_v2']
+#     vars:
+#       project: plog
+#       cluster: sandbox
+#       version: 1001

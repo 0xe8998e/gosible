@@ -1,0 +1,48 @@
+groups: 
+- group:
+  name: xxxx1
+  hosts:
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle        
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle     
+
+- group:
+  name: xxxx2
+  hosts:
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle        
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle       
+
+- group:
+  name: xxxx3
+  hosts:
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle        
+    - host:
+      ip: 10.7.180.234
+      port: 22
+      username: walle     
