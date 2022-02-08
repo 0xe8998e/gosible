@@ -1,7 +1,7 @@
 /*
  * @Author: 0xe8998e@gmail.com
  * @Date: 2021-09-15 14:52:26
- * @LastEditTime: 2022-02-07 22:03:18
+ * @LastEditTime: 2022-02-08 11:14:35
  * @LastEditors: 0xe8998e@gmail.com
  * @FilePath: /gosible/cmd/main.go
  * @Description: gosible Contol Servers of  DevOps's  Tool
@@ -13,7 +13,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/0xe8998e/gosible/gosible"
+	"github.com/0xe8998e/gosible"
 	"github.com/urfave/cli/v2"
 )
 
